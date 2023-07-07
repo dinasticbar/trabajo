@@ -1,0 +1,265 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static "crudprod.css" %}">
+    <script src="{%static "funciones.js" %}"></script>
+</head>
+
+{%block content%}
+<body>
+    <header>
+        <div id="arribita">
+            <img src= "{%static "img/icons8_diamonds_60px.png" %}" alt="">
+            <nav>
+                <a href="{% url 'perfiles' %}">usuarios</a>
+                <a href="">seguridad</a>
+                <a href="">ajustes</a>
+                <a href="historial.html">historial</a>
+                <a href="despacho.html">seguimiento de despacho</a>
+                <a href="">actualizaciones</a>
+                <a href=""></a>
+                <a href="{% url 'home' %}">volver</a>
+            </nav>
+        </div>
+        <div id="buscat">
+            <label for="busca">Ingrese codigo de producto</label>
+            <input type="text" name="buscao" id="buscao" onkeyup="validarbusca()" class="error">
+            <button id="busc">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Uso</th>
+                    <th>Peso</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Correa retractil</td>
+                    <td>Uso habitual</td>
+                    <td> 5 kg </td>
+                    <td> ̶$1̶5̶.0̶0̶0̶  $12.000</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Correa retractil (grande)</td>
+                    <td>Uso habitual</td>
+                    <td>6 kg</td>
+                    <td>$20.000</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Saco Master dog (chico)</td>
+                    <td>Alimento</td>
+                    <td>10 kg</td>
+                    <td>$10.000</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>Saco Master dog (mediano)</td>
+                    <td>Alimento</td>
+                    <td>15 kg</td>
+                    <td>$15.000</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>Saco Master dog (grande)</td>
+                    <td>Alimento</td>
+                    <td>20 kg</td>
+                    <td> ̶$̶2̶0̶.0̶0̶0̶  $17.000</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>Ropa Minion (variedad de colores)</td>
+                    <td>Ropa</td>
+                    <td>........</td>
+                    <td>$9.990</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>Ropa invierno</td>
+                    <td>ropa</td>
+                    <td>..........</td>
+                    <td>$12.999</td>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>Plato de comida (plastico)</td>
+                    <td>Alimentos</td>
+                    <td>1kg</td>
+                    <td>$2.550</td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td>Plato de comida (metal)</td>
+                    <td>Alimentos</td>
+                    <td>3kg</td>
+                    <td>$5.200</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>Bebedero</td>
+                    <td>Alimentos</td>
+                    <td>1kg</td>
+                    <td>$1.290</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>plato para comida y agua (plastico)</td>
+                    <td>Alimentos</td>
+                    <td>3kg</td>
+                    <td>$4.000</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td>plato para comida y agua (metal)</td>
+                    <td>Alimentos</td>
+                    <td>7kg</td>
+                    <td>$6.750</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>Juguete hueso</td>
+                    <td>Jueguete</td>
+                    <td>1kg</td>
+                    <td>$1.000</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>Juguete chillon</td>
+                    <td>juguete</td>
+                    <td>1.5 kg</td>
+                    <td>$1.500</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>Casa para perros</td>
+                    <td>Casa</td>
+                    <td>40 kg</td>
+                    <td>$̶2̶8̶.0̶0̶0̶  $25.000</td>
+                </tr>
+                <tr>
+                    <td>160</td>
+                    <td>Premios</td>
+                    <td>Alimentos</td>
+                    <td>7 kg</td>
+                    <td>$4.700</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>Casa para gatos</td>
+                    <td>Casa/rascador</td>
+                    <td>28 kg</td>
+                    <td>$29.999</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>Alimentos master cat(Mediano)</td>
+                    <td>Alimentos</td>
+                    <td>15kg</td>
+                    <td>$8.400</td>
+                </tr>
+                <tr>
+                    <td>190</td>
+                    <td>Alimentos master cat(Grande)</td>
+                    <td>Alimentos</td>
+                    <td>20kg</td>
+                    <td>$15.200</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>Conjunto de juguetes para gatos (variedades)</td>
+                    <td>Juguetes</td>
+                    <td>........</td>
+                    <td>$10.990</td>
+                </tr>
+                <tr>
+                    <td>210</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>220</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>230</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>240</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>250</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>260</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>270</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>280</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>290</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="but">
+            <button id="correct"><img src= "{% static "img/icons8_Checkmark_512px_1.png" %}"  alt=""></button>
+            <button id="elim"><img src="{% static "img/icons8_close_512px_1.png" %}"  alt=""></button>
+            <button id="edit"><img src="{% static "img/icons8_windows_ink_workspace_512px.png" %}" alt=""></button>
+        </div>
+    </header>
+</body>
+</html>
+{%endblock%}

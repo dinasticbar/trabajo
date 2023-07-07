@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'calibri';
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+#arriba{
+    background-color: #eeea05;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#arriba a{
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin:50px;
+    transition-duration: 0.5s;
+}
+
+#arriba a:hover{
+    background-color: rgb(171, 182, 16);
+    color: #181717;
+    transition-duration: 0.5s;
+}
+
+#inferior h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+    margin: 70px;
+    text-align: center;
+}
+
+.divi{
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.divi > h1{
+    font-family: 'avarge sans',sans-serif;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.divi > h2{
+    font-family: 'avarge sans',sans-serif;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.divi > img{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    margin-top: -57px;
+    background-color: #FFFFFF;
+    width: 3%;
+}
+
+#ima{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lineal{
+    background-color: #0cbfb3;
+    height: 4px;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.divi > h1 {
+    font-size: .9rem;
+}
+
+.divisor{
+    margin: 40px 0px;
+    width: 100%;
+}
+
+#linea{
+    background-color: #0CBFB3;
+    height: 4px;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+#envio{
+    margin: auto;
+}
+
+.asegur{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        row-gap: 20px;
+        background-color: aliceblue;
+}
+.asegur h1{
+    text-align: center;
+    color: green;
+}

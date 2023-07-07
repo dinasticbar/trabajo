@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href={%static "estilo.css"%}>
+</head>
+{%block content%}
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <header>
+        <div id="superior">
+          
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+          </nav>
+               <nav id= "xd">
+                    {%if user.is_authenticated%} 
+                     {{user.username}}
+                     <a href="logout">Salir</a>
+                     <a href={% url 'perfiles' %}>ver perfiles</a>
+                    {%else%}
+                      <a href="login">iniciar sesion</a>
+                      <a href={% url 'perfiles' %}>ver perfiles</a>
+                    {%endif%}
+                    </nav>
+
+
+
+              
+        </div>
+        <div id="abajo">
+            <div class="submenu">
+                <img src="{%static "img/icons8_german_shepherd_50px.png"%}" alt="">
+                <p>¡Perros!</p>
+            </div>
+            <div class="submenu">
+                <img src="{%static "img/icons8_pet_commands_follow_50px.png" %}" alt="">
+                <p>¡Gatos!</p>
+            </div>
+            <div class="submenu">
+                <img src="{%static "img/icons8_search_for_love_50px_2.png"%}" alt="">
+                <p>¡Busca!</p>
+            </div>
+            <div class="submenu">
+                <img src="{%static "img/icons8_wedding_travel_50px.png"%}" alt="">
+                <p>¡Envia!</p>
+            </div>
+            <div class="submenu">
+                <img src="{%static "img/icons8_wizard_50px.png"%}" alt="">
+                <p>¡Ropa mixta!</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <article id="carru">
+            <section id="cel">
+                <div id="carouselExample" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static "img/Perro carrusel.jpg" %}" class="d-block w-100" alt="..." width="150" height="400">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static "img/fit_marca.jpg" %}" class="d-block w-100" alt="..." width="150" height="400">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static "img/viernes negro.jpg" %}" class="d-block w-100" alt="..." width="150" height="400">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </article>
+
+        <article class="divisor">
+            <h1>BUSCA EN PRODUSCTOS EN</h1>
+            <div id="linea"></div>
+            <img src="{% static "img/icons8_cortana_480px.png" %}" alt="">
+        </article>
+
+        <section id="foto">
+            <article id="productos">
+                <div id="imagenes">
+                   <div class="produc">
+                     <img src= "{%static "img/19-KIWI-DISEÑO-ANIMAL-9.jpg" %}" alt="">
+                     <p>Correas</p>
+                   </div>
+                   <div class="produc">
+                     <img src="{% static "img/716H77tpFaL._AC_SL1500_.jpg" %}" alt="">
+                     <p>Juguetes</p>
+                  </div>
+                  <div class="produc">
+                  <img src="{% static "img/th (1).jpg" %}" alt="">
+                     <p>Ropa</p>
+                  </div>
+                  <div class="produc">
+                     <img src="{%static "img/perro_comida_1600x900.jpg" %}" alt="">                 
+                     <p>Comida</p>
+                  </div>
+             </div>
+           </article>
+        </section>
+
+        <article class="divisor">
+            <h1>DESCRIPCION Y PRECIOS</h1>
+            <div id="linea2"></div>
+            <img src="{% static "img/icons8_cortana_480px.png" %}" alt="">
+        </article>
+      <div style="display:flex; justify-content: space-evenly; width: 100%; border: 50px rgb(13, 83, 173) solid; align-items: center;">
+        {%for objeto in objeto%}
+        <div class="objeto">
+            <img src={{objeto.imagen}} alt="">
+            <div>
+             <span>Quedan</span>
+             <span>{{objeto.stock}}</span> 
+            </div>
+            <div>
+             <span class="tachado"> {{objeto.tachado}} </span>
+             <span>{{objeto.precio}}</span>
+            </div>
+            
+            <div class="boton">
+                    <img src="{%static "img/icons8_wedding_travel_50px.png" %}" alt="">
+                    <p>CARRITO</p>
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+    </div>    
+        <article class="divisor">
+            <h1>nuestras redes en</h1>
+            <div id="linea2"></div>
+            <img src="{%static "img/icons8_cortana_480px.png" %}" alt="">
+        </article>
+        <article id="redes">
+            <img src="{%static "img/icons8_facebook_50px.png" %}" alt="">
+            <img src="{%static "img/icons8_discord_50px.png" %}" alt="">
+            <img src="{%static "img/icons8_instagram_50px.png" %}" alt="">
+            <img src="{%static "img/icons8_twitter_50px.png" %}" alt="">
+        </article>
+    </section>
+
+
+</body>
+
+</html>
+
+{%endblock%}

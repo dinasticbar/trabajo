@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'avarage Sans',sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+#superior{
+    background-color: #e4e0e0;
+    padding: 0 px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#abajo{
+    display: flex;
+    justify-content: center;
+}
+
+.submenu{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.submenu>img{
+    width: 28px;
+}
+
+.submenu:hover{
+    background-color: aqua;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+a{
+    font-size: .9rem;
+    color: #d7ddee;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 5px transparent solid;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    border-top: #ea666a solid;
+    transition-duration: 0.5s;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#xd{
+ width: 20%;
+ background-color: #4428e2;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+#carru{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(img/fondo.avif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cel{
+    width: 60%;
+} 
+
+#main{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.divisor{
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.divisor > h1{
+    font-family: 'avarge sans',sans-serif;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+.divisor > img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -57px;
+    background-color: #FFFFFF;
+    width: 3%;
+}
+
+#linea{
+    background-color: #0cbfb3;
+    height: 4px;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.divisor > h1 {
+    font-size: .9rem;
+}
+
+#foto{
+ margin-top: 25px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+}
+
+#imagenes{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#imagenes>{
+    width: 15%;
+}
+
+.produc{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.produc:hover{
+    background-color: rgb(90, 79, 241);
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+
+.produc > img{
+    width: 40%;
+}
+
+.divisor{
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.divisor2 > h1{
+    font-family: 'avarge sans',sans-serif;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+.divisor2 > img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -57px;
+    background-color: #FFFFFF;
+    width: 3%;
+}
+
+#linea2{
+    background-color: #0cbfb3;
+    height: 4px;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.divisor2 > h1 {
+    font-size: .9rem;
+}
+
+#descripcion{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.objeto{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.objeto > img{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    row-gap: 20px;
+    background-color: rgb(3, 137, 255);
+}
+
+.boton{
+    width: 40%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    border: 2px #000000 solid;
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: #e5e5e5;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition-duration: .3;
+}
+
+.boton:hover{
+    transition-duration: .3;
+    background-color: blue;
+}
+
+.boton > img{
+    height: 25px;
+}
+
+#redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+#redes>img{
+    width: 15%;
+}
+
+.tachado{
+    text-decoration: line-through;
+}

@@ -1,0 +1,270 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "crudper.css" %}">
+    <script src="{%static "funciones.js" %}"></script>
+</head>
+
+{%block content%}
+<body>
+    <header>
+        <div id="arrib">
+            <img src="{%static "img/icons8_user_male_skin_type_4_60px.png" %}" alt="">
+            <nav>
+                <a href="{% url 'producto'%}">Productos</a>
+                <a href="">seguridad</a>
+                <a href="">ajustes</a>
+                <a href="historial.html">historial</a>
+                <a href="despacho.html">seguimiento de despacho</a>
+                <a href="">actualizaciones</a>
+                <a href=""></a>
+                <a href="{% url 'home' %}">volver</a>
+            </nav>
+        </div>
+        <div id="busca">
+            <label for="busca">Ingrese un id</label>
+            <input type="text" name="buscar" id="buscar" onkeyup="validarbusca()" class="error">
+            <button id="bus">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Contraeña</th>
+                    <th>Ocupacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Alambrito</td>
+                    <td>Delgado</td>
+                    <td>**********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Adolfito</td>
+                    <td>Hittler</td>
+                    <td>********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Alan</td>
+                    <td>Fider</td>
+                    <td>*********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>Montserrat</td>
+                    <td>Izayoi</td>
+                    <td>******</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>Martina</td>
+                    <td>Correa</td>
+                    <td>***********</td>
+                    <td>Suspendido</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>Brian</td>
+                    <td>Henrriquez</td>
+                    <td>********</td>
+                    <td>Perfil eliminado</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>Sebastian</td>
+                    <td>Alvarez</td>
+                    <td>********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>Sebastian</td>
+                    <td>Loayza</td>
+                    <td>***********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td>Consuelo</td>
+                    <td>Malhue</td>
+                    <td>***********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>Consuelo</td>
+                    <td>Urbina</td>
+                    <td>**********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Ana</td>
+                    <td>Litorel</td>
+                    <td>***********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td>Catalina</td>
+                    <td>Baldenegro</td>
+                    <td>*********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>Adolfo</td>
+                    <td>Hernadez</td>
+                    <td>*********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>Ruben</td>
+                    <td>Hernandez</td>
+                    <td>*********</td>
+                    <td>Desarrollador</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>Paz</td>
+                    <td>Hernandez</td>
+                    <td>*******</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>160</td>
+                    <td>Luis</td>
+                    <td>Moya</td>
+                    <td>******</td>
+                    <td>Administrador</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>Pilar</td>
+                    <td>Gongora</td>
+                    <td>**********</td>
+                    <td>Administrador</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>Wladimir</td>
+                    <td>Moya</td>
+                    <td>*********</td>
+                    <td>Desarrollador</td>
+                </tr>
+                <tr>
+                    <td>190</td>
+                    <td>Jorge</td>
+                    <td>Moya</td>
+                    <td>**********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>Joan</td>
+                    <td>Alvarez</td>
+                    <td>********</td>
+                    <td>Usuario</td>
+                </tr>
+                <tr>
+                    <td>210</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>220</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>230</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>240</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>250</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>260</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>270</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>280</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>290</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>*******</td>
+                    <td>Vacio</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="Suscribir.html">Suscribete para promociones increibles</a>
+        <div id="but">
+            <button id="correct"><img src={% static "img/icons8_Checkmark_512px_1.png"%} alt=""></button>
+            <button id="elim"><img src= {% static "img/icons8_close_512px_1.png" %} alt=""></button>
+            <button id="edit"><img src= {% static "img/icons8_windows_ink_workspace_512px.png" %} alt=""></button>
+        </div>
+
+    </header>
+</body>
+
+</html>
+
+{%endblock%}

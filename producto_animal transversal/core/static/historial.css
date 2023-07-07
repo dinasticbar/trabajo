@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'calibri';
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+#arribota{
+    background-color: #06dd06;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#arribota a{
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin:50px;
+    transition-duration: 0.5s;
+}
+
+#arribota a:hover{
+    background-color: rgb(92, 250, 0);
+    color: #181717;
+    transition-duration: 0.5s;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+table{
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+thead{
+    background-color: #06dd06;
+}
+  
+tbody{
+      background-color: rgb(186, 206, 10);
+  }
+
+
+p {
+    text-align: center;
+}
+
+#opc{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#but{
+    display:flex;
+    width: 100%;
+    align-items: center ;
+    justify-content: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+#correct > img{
+ width: 50px;
+ background-color: rgb(78, 238, 78);
+}
+
+#correct{
+    width: 30%;
+    background-color: rgb(78, 238, 78);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#elim > img{
+    width: 50px;
+    background-color: rgb(245, 29, 29)
+   }
+   
+#elim{
+       width: 30%;
+       background-color: rgb(245, 29, 29);
+       cursor: pointer;
+   }
+
+#edit > img{
+ width: 50px;
+ background-color: rgb(13, 189, 121);
+}
+   
+#edit{
+    width: 30%;
+    background-color: rgb(13, 189, 121);
+    cursor: pointer;
+}

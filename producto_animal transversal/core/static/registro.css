@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sec{
+   width: 350px;
+   background-color: rgb(204, 203, 203); 
+   padding: 30px;
+   margin: auto;
+   margin-top: 200px;
+   border-radius: 4px;
+   font-family: 'calibri';
+   color: #FFFFFF;
+   box-shadow: 7px 13px 37px #000000;
+}
+
+.sec h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.controls{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.sec p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+body{
+    background: url(img/animals-cat-1271003-wallhere.com.jpg);
+    padding: 50px;
+}
+.sec a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sec a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.sec .boton{
+    width: 100%;
+    background-color: #0051ff;
+    border: none;
+    padding: 12px;
+    color: #FFFFFF;
+    margin: 16px 0px;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+.sec .boton:hover{
+    background-color: #0d3281;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+.error{
+    background-color:  rgb(175, 170, 170) !important;
+}
